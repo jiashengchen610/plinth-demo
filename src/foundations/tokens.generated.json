@@ -1,0 +1,993 @@
+{
+  "name": "Chinese Restaurant",
+  "context": "marketing-site",
+  "defaultBrand": "restaurant",
+  "brands": {
+    "restaurant": {
+      "name": "restaurant",
+      "modes": [
+        "light",
+        "dark"
+      ],
+      "tokens": [
+        {
+          "name": "radius",
+          "path": "radius/base",
+          "group": "radius",
+          "type": "dimension",
+          "description": "Base corner radius; sm–4xl derive from it.",
+          "values": {
+            "light": {
+              "raw": {
+                "value": 0.875,
+                "unit": "rem"
+              },
+              "css": "0.875rem",
+              "resolved": "0.875rem"
+            },
+            "dark": {
+              "raw": {
+                "value": 0.875,
+                "unit": "rem"
+              },
+              "css": "0.875rem",
+              "resolved": "0.875rem"
+            }
+          }
+        },
+        {
+          "name": "sans-font",
+          "path": "font/sans",
+          "group": "font",
+          "type": "fontFamily",
+          "values": {
+            "light": {
+              "raw": [
+                "Noto Sans SC",
+                "sans-serif"
+              ],
+              "css": "'Noto Sans SC', sans-serif",
+              "resolved": "'Noto Sans SC', sans-serif"
+            },
+            "dark": {
+              "raw": [
+                "Noto Sans SC",
+                "sans-serif"
+              ],
+              "css": "'Noto Sans SC', sans-serif",
+              "resolved": "'Noto Sans SC', sans-serif"
+            }
+          }
+        },
+        {
+          "name": "display-font",
+          "path": "typography/display",
+          "group": "typography",
+          "type": "typography",
+          "values": {
+            "light": {
+              "raw": {
+                "fontFamily": [
+                  "Geist",
+                  "sans-serif"
+                ],
+                "fontSize": {
+                  "value": 2,
+                  "unit": "rem"
+                },
+                "fontWeight": 600,
+                "lineHeight": 1.15,
+                "letterSpacing": {
+                  "value": -0.02,
+                  "unit": "em"
+                }
+              },
+              "css": "600 2rem/1.15 Geist, sans-serif",
+              "resolved": "600 2rem/1.15 Geist, sans-serif"
+            },
+            "dark": {
+              "raw": {
+                "fontFamily": [
+                  "Geist",
+                  "sans-serif"
+                ],
+                "fontSize": {
+                  "value": 2,
+                  "unit": "rem"
+                },
+                "fontWeight": 600,
+                "lineHeight": 1.15,
+                "letterSpacing": {
+                  "value": -0.02,
+                  "unit": "em"
+                }
+              },
+              "css": "600 2rem/1.15 Geist, sans-serif",
+              "resolved": "600 2rem/1.15 Geist, sans-serif"
+            }
+          }
+        },
+        {
+          "name": "body-font",
+          "path": "typography/body",
+          "group": "typography",
+          "type": "typography",
+          "values": {
+            "light": {
+              "raw": {
+                "fontFamily": [
+                  "Geist",
+                  "sans-serif"
+                ],
+                "fontSize": {
+                  "value": 0.875,
+                  "unit": "rem"
+                },
+                "fontWeight": 400,
+                "lineHeight": 1.5
+              },
+              "css": "400 0.875rem/1.5 Geist, sans-serif",
+              "resolved": "400 0.875rem/1.5 Geist, sans-serif"
+            },
+            "dark": {
+              "raw": {
+                "fontFamily": [
+                  "Geist",
+                  "sans-serif"
+                ],
+                "fontSize": {
+                  "value": 0.875,
+                  "unit": "rem"
+                },
+                "fontWeight": 400,
+                "lineHeight": 1.5
+              },
+              "css": "400 0.875rem/1.5 Geist, sans-serif",
+              "resolved": "400 0.875rem/1.5 Geist, sans-serif"
+            }
+          }
+        },
+        {
+          "name": "card-shadow",
+          "path": "shadow/card",
+          "group": "shadow",
+          "type": "shadow",
+          "values": {
+            "light": {
+              "raw": {
+                "color": "#0000001a",
+                "offsetX": {
+                  "value": 0,
+                  "unit": "px"
+                },
+                "offsetY": {
+                  "value": 1,
+                  "unit": "px"
+                },
+                "blur": {
+                  "value": 2,
+                  "unit": "px"
+                },
+                "spread": {
+                  "value": 0,
+                  "unit": "px"
+                }
+              },
+              "css": "0px 1px 2px 0px #0000001a",
+              "resolved": "0px 1px 2px 0px #0000001a"
+            },
+            "dark": {
+              "raw": {
+                "color": "#0000001a",
+                "offsetX": {
+                  "value": 0,
+                  "unit": "px"
+                },
+                "offsetY": {
+                  "value": 1,
+                  "unit": "px"
+                },
+                "blur": {
+                  "value": 2,
+                  "unit": "px"
+                },
+                "spread": {
+                  "value": 0,
+                  "unit": "px"
+                }
+              },
+              "css": "0px 1px 2px 0px #0000001a",
+              "resolved": "0px 1px 2px 0px #0000001a"
+            }
+          }
+        },
+        {
+          "name": "overlay-shadow",
+          "path": "shadow/overlay",
+          "group": "shadow",
+          "type": "shadow",
+          "values": {
+            "light": {
+              "raw": [
+                {
+                  "color": "#0000001f",
+                  "offsetX": {
+                    "value": 0,
+                    "unit": "px"
+                  },
+                  "offsetY": {
+                    "value": 8,
+                    "unit": "px"
+                  },
+                  "blur": {
+                    "value": 24,
+                    "unit": "px"
+                  },
+                  "spread": {
+                    "value": -4,
+                    "unit": "px"
+                  }
+                },
+                {
+                  "color": "#0000000f",
+                  "offsetX": {
+                    "value": 0,
+                    "unit": "px"
+                  },
+                  "offsetY": {
+                    "value": 2,
+                    "unit": "px"
+                  },
+                  "blur": {
+                    "value": 6,
+                    "unit": "px"
+                  },
+                  "spread": {
+                    "value": 0,
+                    "unit": "px"
+                  }
+                }
+              ],
+              "css": "0px 8px 24px -4px #0000001f, 0px 2px 6px 0px #0000000f",
+              "resolved": "0px 8px 24px -4px #0000001f, 0px 2px 6px 0px #0000000f"
+            },
+            "dark": {
+              "raw": [
+                {
+                  "color": "#0000001f",
+                  "offsetX": {
+                    "value": 0,
+                    "unit": "px"
+                  },
+                  "offsetY": {
+                    "value": 8,
+                    "unit": "px"
+                  },
+                  "blur": {
+                    "value": 24,
+                    "unit": "px"
+                  },
+                  "spread": {
+                    "value": -4,
+                    "unit": "px"
+                  }
+                },
+                {
+                  "color": "#0000000f",
+                  "offsetX": {
+                    "value": 0,
+                    "unit": "px"
+                  },
+                  "offsetY": {
+                    "value": 2,
+                    "unit": "px"
+                  },
+                  "blur": {
+                    "value": 6,
+                    "unit": "px"
+                  },
+                  "spread": {
+                    "value": 0,
+                    "unit": "px"
+                  }
+                }
+              ],
+              "css": "0px 8px 24px -4px #0000001f, 0px 2px 6px 0px #0000000f",
+              "resolved": "0px 8px 24px -4px #0000001f, 0px 2px 6px 0px #0000000f"
+            }
+          }
+        },
+        {
+          "name": "standard-ease",
+          "path": "ease/standard",
+          "group": "ease",
+          "type": "cubicBezier",
+          "values": {
+            "light": {
+              "raw": [
+                0.2,
+                0,
+                0,
+                1
+              ],
+              "css": "cubic-bezier(0.2, 0, 0, 1)",
+              "resolved": "cubic-bezier(0.2, 0, 0, 1)"
+            },
+            "dark": {
+              "raw": [
+                0.2,
+                0,
+                0,
+                1
+              ],
+              "css": "cubic-bezier(0.2, 0, 0, 1)",
+              "resolved": "cubic-bezier(0.2, 0, 0, 1)"
+            }
+          }
+        },
+        {
+          "name": "motion-fast",
+          "path": "motion/fast",
+          "group": "motion",
+          "type": "transition",
+          "values": {
+            "light": {
+              "raw": {
+                "duration": {
+                  "value": 150,
+                  "unit": "ms"
+                },
+                "timingFunction": "{ease.standard}"
+              },
+              "css": "150ms var(--standard-ease)",
+              "resolved": "150ms var(--standard-ease)"
+            },
+            "dark": {
+              "raw": {
+                "duration": {
+                  "value": 150,
+                  "unit": "ms"
+                },
+                "timingFunction": "{ease.standard}"
+              },
+              "css": "150ms var(--standard-ease)",
+              "resolved": "150ms var(--standard-ease)"
+            }
+          }
+        },
+        {
+          "name": "background",
+          "path": "color/background",
+          "group": "color",
+          "type": "color",
+          "values": {
+            "light": {
+              "raw": "oklch(0.99 0.006 90)",
+              "css": "oklch(0.99 0.006 90)",
+              "resolved": "oklch(0.99 0.006 90)"
+            },
+            "dark": {
+              "raw": "oklch(0.17 0.015 30)",
+              "css": "oklch(0.17 0.015 30)",
+              "resolved": "oklch(0.17 0.015 30)"
+            }
+          }
+        },
+        {
+          "name": "foreground",
+          "path": "color/foreground",
+          "group": "color",
+          "type": "color",
+          "values": {
+            "light": {
+              "raw": "oklch(0.2 0.02 30)",
+              "css": "oklch(0.2 0.02 30)",
+              "resolved": "oklch(0.2 0.02 30)"
+            },
+            "dark": {
+              "raw": "oklch(0.96 0.01 85)",
+              "css": "oklch(0.96 0.01 85)",
+              "resolved": "oklch(0.96 0.01 85)"
+            }
+          }
+        },
+        {
+          "name": "card",
+          "path": "color/card",
+          "group": "color",
+          "type": "color",
+          "values": {
+            "light": {
+              "raw": "oklch(1 0 0)",
+              "css": "oklch(1 0 0)",
+              "resolved": "oklch(1 0 0)"
+            },
+            "dark": {
+              "raw": "oklch(0.21 0.018 30)",
+              "css": "oklch(0.21 0.018 30)",
+              "resolved": "oklch(0.21 0.018 30)"
+            }
+          }
+        },
+        {
+          "name": "card-foreground",
+          "path": "color/card-foreground",
+          "group": "color",
+          "type": "color",
+          "values": {
+            "light": {
+              "raw": "oklch(0.2 0.02 30)",
+              "css": "oklch(0.2 0.02 30)",
+              "resolved": "oklch(0.2 0.02 30)"
+            },
+            "dark": {
+              "raw": "oklch(0.96 0.01 85)",
+              "css": "oklch(0.96 0.01 85)",
+              "resolved": "oklch(0.96 0.01 85)"
+            }
+          }
+        },
+        {
+          "name": "popover",
+          "path": "color/popover",
+          "group": "color",
+          "type": "color",
+          "values": {
+            "light": {
+              "raw": "oklch(1 0 0)",
+              "css": "oklch(1 0 0)",
+              "resolved": "oklch(1 0 0)"
+            },
+            "dark": {
+              "raw": "oklch(0.21 0.018 30)",
+              "css": "oklch(0.21 0.018 30)",
+              "resolved": "oklch(0.21 0.018 30)"
+            }
+          }
+        },
+        {
+          "name": "popover-foreground",
+          "path": "color/popover-foreground",
+          "group": "color",
+          "type": "color",
+          "values": {
+            "light": {
+              "raw": "oklch(0.2 0.02 30)",
+              "css": "oklch(0.2 0.02 30)",
+              "resolved": "oklch(0.2 0.02 30)"
+            },
+            "dark": {
+              "raw": "oklch(0.96 0.01 85)",
+              "css": "oklch(0.96 0.01 85)",
+              "resolved": "oklch(0.96 0.01 85)"
+            }
+          }
+        },
+        {
+          "name": "primary",
+          "path": "color/primary",
+          "group": "color",
+          "type": "color",
+          "values": {
+            "light": {
+              "raw": "oklch(0.56 0.19 36)",
+              "css": "oklch(0.56 0.19 36)",
+              "resolved": "oklch(0.56 0.19 36)"
+            },
+            "dark": {
+              "raw": "oklch(0.72 0.16 42)",
+              "css": "oklch(0.72 0.16 42)",
+              "resolved": "oklch(0.72 0.16 42)"
+            }
+          }
+        },
+        {
+          "name": "primary-foreground",
+          "path": "color/primary-foreground",
+          "group": "color",
+          "type": "color",
+          "values": {
+            "light": {
+              "raw": "oklch(0.99 0.006 90)",
+              "css": "oklch(0.99 0.006 90)",
+              "resolved": "oklch(0.99 0.006 90)"
+            },
+            "dark": {
+              "raw": "oklch(0.17 0.02 30)",
+              "css": "oklch(0.17 0.02 30)",
+              "resolved": "oklch(0.17 0.02 30)"
+            }
+          }
+        },
+        {
+          "name": "secondary",
+          "path": "color/secondary",
+          "group": "color",
+          "type": "color",
+          "values": {
+            "light": {
+              "raw": "oklch(0.93 0.04 165)",
+              "css": "oklch(0.93 0.04 165)",
+              "resolved": "oklch(0.93 0.04 165)"
+            },
+            "dark": {
+              "raw": "oklch(0.3 0.04 165)",
+              "css": "oklch(0.3 0.04 165)",
+              "resolved": "oklch(0.3 0.04 165)"
+            }
+          }
+        },
+        {
+          "name": "secondary-foreground",
+          "path": "color/secondary-foreground",
+          "group": "color",
+          "type": "color",
+          "values": {
+            "light": {
+              "raw": "oklch(0.3 0.06 165)",
+              "css": "oklch(0.3 0.06 165)",
+              "resolved": "oklch(0.3 0.06 165)"
+            },
+            "dark": {
+              "raw": "oklch(0.94 0.02 165)",
+              "css": "oklch(0.94 0.02 165)",
+              "resolved": "oklch(0.94 0.02 165)"
+            }
+          }
+        },
+        {
+          "name": "muted",
+          "path": "color/muted",
+          "group": "color",
+          "type": "color",
+          "values": {
+            "light": {
+              "raw": "oklch(0.95 0.01 60)",
+              "css": "oklch(0.95 0.01 60)",
+              "resolved": "oklch(0.95 0.01 60)"
+            },
+            "dark": {
+              "raw": "oklch(0.26 0.015 30)",
+              "css": "oklch(0.26 0.015 30)",
+              "resolved": "oklch(0.26 0.015 30)"
+            }
+          }
+        },
+        {
+          "name": "muted-foreground",
+          "path": "color/muted-foreground",
+          "group": "color",
+          "type": "color",
+          "values": {
+            "light": {
+              "raw": "oklch(0.48 0.02 40)",
+              "css": "oklch(0.48 0.02 40)",
+              "resolved": "oklch(0.48 0.02 40)"
+            },
+            "dark": {
+              "raw": "oklch(0.72 0.015 60)",
+              "css": "oklch(0.72 0.015 60)",
+              "resolved": "oklch(0.72 0.015 60)"
+            }
+          }
+        },
+        {
+          "name": "accent",
+          "path": "color/accent",
+          "group": "color",
+          "type": "color",
+          "values": {
+            "light": {
+              "raw": "oklch(0.93 0.07 88)",
+              "css": "oklch(0.93 0.07 88)",
+              "resolved": "oklch(0.93 0.07 88)"
+            },
+            "dark": {
+              "raw": "oklch(0.34 0.06 80)",
+              "css": "oklch(0.34 0.06 80)",
+              "resolved": "oklch(0.34 0.06 80)"
+            }
+          }
+        },
+        {
+          "name": "accent-foreground",
+          "path": "color/accent-foreground",
+          "group": "color",
+          "type": "color",
+          "values": {
+            "light": {
+              "raw": "oklch(0.3 0.06 60)",
+              "css": "oklch(0.3 0.06 60)",
+              "resolved": "oklch(0.3 0.06 60)"
+            },
+            "dark": {
+              "raw": "oklch(0.95 0.05 88)",
+              "css": "oklch(0.95 0.05 88)",
+              "resolved": "oklch(0.95 0.05 88)"
+            }
+          }
+        },
+        {
+          "name": "destructive",
+          "path": "color/destructive",
+          "group": "color",
+          "type": "color",
+          "values": {
+            "light": {
+              "raw": "oklch(0.44 0.17 25)",
+              "css": "oklch(0.44 0.17 25)",
+              "resolved": "oklch(0.44 0.17 25)"
+            },
+            "dark": {
+              "raw": "oklch(0.62 0.21 22)",
+              "css": "oklch(0.62 0.21 22)",
+              "resolved": "oklch(0.62 0.21 22)"
+            }
+          }
+        },
+        {
+          "name": "border",
+          "path": "color/border",
+          "group": "color",
+          "type": "color",
+          "values": {
+            "light": {
+              "raw": "oklch(0.9 0.015 60)",
+              "css": "oklch(0.9 0.015 60)",
+              "resolved": "oklch(0.9 0.015 60)"
+            },
+            "dark": {
+              "raw": "oklch(1 0 0 / 12%)",
+              "css": "oklch(1 0 0 / 12%)",
+              "resolved": "oklch(1 0 0 / 12%)"
+            }
+          }
+        },
+        {
+          "name": "input",
+          "path": "color/input",
+          "group": "color",
+          "type": "color",
+          "values": {
+            "light": {
+              "raw": "oklch(0.88 0.015 60)",
+              "css": "oklch(0.88 0.015 60)",
+              "resolved": "oklch(0.88 0.015 60)"
+            },
+            "dark": {
+              "raw": "oklch(1 0 0 / 16%)",
+              "css": "oklch(1 0 0 / 16%)",
+              "resolved": "oklch(1 0 0 / 16%)"
+            }
+          }
+        },
+        {
+          "name": "ring",
+          "path": "color/ring",
+          "group": "color",
+          "type": "color",
+          "values": {
+            "light": {
+              "raw": "oklch(0.64 0.16 36)",
+              "css": "oklch(0.64 0.16 36)",
+              "resolved": "oklch(0.64 0.16 36)"
+            },
+            "dark": {
+              "raw": "oklch(0.62 0.14 42)",
+              "css": "oklch(0.62 0.14 42)",
+              "resolved": "oklch(0.62 0.14 42)"
+            }
+          }
+        },
+        {
+          "name": "success",
+          "path": "color/success",
+          "group": "color",
+          "type": "color",
+          "values": {
+            "light": {
+              "raw": "oklch(0.52 0.14 150)",
+              "css": "oklch(0.52 0.14 150)",
+              "resolved": "oklch(0.52 0.14 150)"
+            },
+            "dark": {
+              "raw": "oklch(0.72 0.16 150)",
+              "css": "oklch(0.72 0.16 150)",
+              "resolved": "oklch(0.72 0.16 150)"
+            }
+          }
+        },
+        {
+          "name": "success-foreground",
+          "path": "color/success-foreground",
+          "group": "color",
+          "type": "color",
+          "values": {
+            "light": {
+              "raw": "oklch(0.985 0 0)",
+              "css": "oklch(0.985 0 0)",
+              "resolved": "oklch(0.985 0 0)"
+            },
+            "dark": {
+              "raw": "oklch(0.2 0.03 150)",
+              "css": "oklch(0.2 0.03 150)",
+              "resolved": "oklch(0.2 0.03 150)"
+            }
+          }
+        },
+        {
+          "name": "warning",
+          "path": "color/warning",
+          "group": "color",
+          "type": "color",
+          "values": {
+            "light": {
+              "raw": "oklch(0.62 0.15 70)",
+              "css": "oklch(0.62 0.15 70)",
+              "resolved": "oklch(0.62 0.15 70)"
+            },
+            "dark": {
+              "raw": "oklch(0.8 0.16 80)",
+              "css": "oklch(0.8 0.16 80)",
+              "resolved": "oklch(0.8 0.16 80)"
+            }
+          }
+        },
+        {
+          "name": "warning-foreground",
+          "path": "color/warning-foreground",
+          "group": "color",
+          "type": "color",
+          "values": {
+            "light": {
+              "raw": "oklch(0.2 0.03 70)",
+              "css": "oklch(0.2 0.03 70)",
+              "resolved": "oklch(0.2 0.03 70)"
+            },
+            "dark": {
+              "raw": "oklch(0.25 0.04 80)",
+              "css": "oklch(0.25 0.04 80)",
+              "resolved": "oklch(0.25 0.04 80)"
+            }
+          }
+        },
+        {
+          "name": "info",
+          "path": "color/info",
+          "group": "color",
+          "type": "color",
+          "values": {
+            "light": {
+              "raw": "oklch(0.52 0.14 250)",
+              "css": "oklch(0.52 0.14 250)",
+              "resolved": "oklch(0.52 0.14 250)"
+            },
+            "dark": {
+              "raw": "oklch(0.72 0.13 250)",
+              "css": "oklch(0.72 0.13 250)",
+              "resolved": "oklch(0.72 0.13 250)"
+            }
+          }
+        },
+        {
+          "name": "info-foreground",
+          "path": "color/info-foreground",
+          "group": "color",
+          "type": "color",
+          "values": {
+            "light": {
+              "raw": "oklch(0.985 0 0)",
+              "css": "oklch(0.985 0 0)",
+              "resolved": "oklch(0.985 0 0)"
+            },
+            "dark": {
+              "raw": "oklch(0.2 0.03 250)",
+              "css": "oklch(0.2 0.03 250)",
+              "resolved": "oklch(0.2 0.03 250)"
+            }
+          }
+        }
+      ],
+      "contrast": [
+        {
+          "mode": "light",
+          "bg": "background",
+          "fg": "foreground",
+          "ratio": 17.67,
+          "min": 4.5,
+          "pass": true,
+          "accepted": false
+        },
+        {
+          "mode": "dark",
+          "bg": "background",
+          "fg": "foreground",
+          "ratio": 17.07,
+          "min": 4.5,
+          "pass": true,
+          "accepted": false
+        },
+        {
+          "mode": "light",
+          "bg": "card",
+          "fg": "card-foreground",
+          "ratio": 18.18,
+          "min": 4.5,
+          "pass": true,
+          "accepted": false
+        },
+        {
+          "mode": "dark",
+          "bg": "card",
+          "fg": "card-foreground",
+          "ratio": 15.84,
+          "min": 4.5,
+          "pass": true,
+          "accepted": false
+        },
+        {
+          "mode": "light",
+          "bg": "popover",
+          "fg": "popover-foreground",
+          "ratio": 18.18,
+          "min": 4.5,
+          "pass": true,
+          "accepted": false
+        },
+        {
+          "mode": "dark",
+          "bg": "popover",
+          "fg": "popover-foreground",
+          "ratio": 15.84,
+          "min": 4.5,
+          "pass": true,
+          "accepted": false
+        },
+        {
+          "mode": "light",
+          "bg": "primary",
+          "fg": "primary-foreground",
+          "ratio": 4.95,
+          "min": 4.5,
+          "pass": true,
+          "accepted": false
+        },
+        {
+          "mode": "dark",
+          "bg": "primary",
+          "fg": "primary-foreground",
+          "ratio": 7.29,
+          "min": 4.5,
+          "pass": true,
+          "accepted": false
+        },
+        {
+          "mode": "light",
+          "bg": "secondary",
+          "fg": "secondary-foreground",
+          "ratio": 10.97,
+          "min": 4.5,
+          "pass": true,
+          "accepted": false
+        },
+        {
+          "mode": "dark",
+          "bg": "secondary",
+          "fg": "secondary-foreground",
+          "ratio": 11.32,
+          "min": 4.5,
+          "pass": true,
+          "accepted": false
+        },
+        {
+          "mode": "light",
+          "bg": "muted",
+          "fg": "muted-foreground",
+          "ratio": 5.69,
+          "min": 4.5,
+          "pass": true,
+          "accepted": false
+        },
+        {
+          "mode": "dark",
+          "bg": "muted",
+          "fg": "muted-foreground",
+          "ratio": 6.27,
+          "min": 4.5,
+          "pass": true,
+          "accepted": false
+        },
+        {
+          "mode": "light",
+          "bg": "accent",
+          "fg": "accent-foreground",
+          "ratio": 11.26,
+          "min": 4.5,
+          "pass": true,
+          "accepted": false
+        },
+        {
+          "mode": "dark",
+          "bg": "accent",
+          "fg": "accent-foreground",
+          "ratio": 10.23,
+          "min": 4.5,
+          "pass": true,
+          "accepted": false
+        },
+        {
+          "mode": "light",
+          "bg": "success",
+          "fg": "success-foreground",
+          "ratio": 4.95,
+          "min": 4.5,
+          "pass": true,
+          "accepted": false
+        },
+        {
+          "mode": "dark",
+          "bg": "success",
+          "fg": "success-foreground",
+          "ratio": 7.72,
+          "min": 4.5,
+          "pass": true,
+          "accepted": false
+        },
+        {
+          "mode": "light",
+          "bg": "warning",
+          "fg": "warning-foreground",
+          "ratio": 4.85,
+          "min": 4.5,
+          "pass": true,
+          "accepted": false
+        },
+        {
+          "mode": "dark",
+          "bg": "warning",
+          "fg": "warning-foreground",
+          "ratio": 8.45,
+          "min": 4.5,
+          "pass": true,
+          "accepted": false
+        },
+        {
+          "mode": "light",
+          "bg": "info",
+          "fg": "info-foreground",
+          "ratio": 5.28,
+          "min": 4.5,
+          "pass": true,
+          "accepted": false
+        },
+        {
+          "mode": "dark",
+          "bg": "info",
+          "fg": "info-foreground",
+          "ratio": 7.33,
+          "min": 4.5,
+          "pass": true,
+          "accepted": false
+        },
+        {
+          "mode": "light",
+          "bg": "background",
+          "fg": "muted-foreground",
+          "ratio": 6.4,
+          "min": 4.5,
+          "pass": true,
+          "accepted": false
+        },
+        {
+          "mode": "dark",
+          "bg": "background",
+          "fg": "muted-foreground",
+          "ratio": 7.7,
+          "min": 4.5,
+          "pass": true,
+          "accepted": false
+        }
+      ]
+    }
+  }
+}
