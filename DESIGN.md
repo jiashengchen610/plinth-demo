@@ -4,8 +4,11 @@ Applies to every brand. Brand files under brands/<id>/DESIGN.md add or replace s
 
 ## Layout
 
+- Marketing site: generous hero with real food photography, then menu, story, location and booking.
 - Use the spacing scale only (multiples of 4px through Tailwind utilities).
-- One primary action per view; secondary actions use outline or ghost buttons.
+- One primary action per view ("Book a table" or "Order now"); secondary actions use outline or ghost buttons.
+- Keep the booking or order action reachable on every page; on phones, a sticky bottom bar with 44px touch targets.
+- Menus are scannable: dish name, short description and price on one row on desktop, stacked on phones.
 - Body text stays under 75 characters per line.
 
 ## Components
