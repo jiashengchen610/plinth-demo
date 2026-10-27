@@ -1,26 +1,26 @@
 ---
 version: "alpha"
 name: restaurant
-description: "A neutral starting brand. Replace this with the brand's own description."
+description: "A lively, welcoming Chinese restaurant brand: festive like a New Year table, rooted in real Chinese craft rather than takeaway clichés."
 colors:
-  background: "#ffffff"
-  foreground: "#0a0a0a"
+  background: "#fdfcf7"
+  foreground: "#1e1311"
   card: "#ffffff"
-  card-foreground: "#0a0a0a"
+  card-foreground: "#1e1311"
   popover: "#ffffff"
-  popover-foreground: "#0a0a0a"
-  primary: "#171717"
-  primary-foreground: "#fafafa"
-  secondary: "#f5f5f5"
-  secondary-foreground: "#171717"
-  muted: "#f5f5f5"
-  muted-foreground: "#696969"
-  accent: "#f5f5f5"
-  accent-foreground: "#171717"
-  destructive: "#bc0013"
-  border: "#e5e5e5"
-  input: "#e5e5e5"
-  ring: "#a1a1a1"
+  popover-foreground: "#1e1311"
+  primary: "#cb3904"
+  primary-foreground: "#fdfcf7"
+  secondary: "#d0f1e1"
+  secondary-foreground: "#043726"
+  muted: "#f4ede8"
+  muted-foreground: "#685a55"
+  accent: "#fbe6b3"
+  accent-foreground: "#43260a"
+  destructive: "#9b0f1b"
+  border: "#e6dcd4"
+  input: "#dfd5ce"
+  ring: "#db6241"
   success: "#0a7e3a"
   success-foreground: "#fafafa"
   warning: "#b97500"
@@ -40,31 +40,45 @@ typography:
     fontWeight: 400
     lineHeight: 1.5
 rounded:
-  md: 0.625rem
+  md: 0.875rem
 ---
 
 # restaurant
 
 ## Overview
 
-Calm, neutral and legible. Color is reserved for actions and status.
+Fun, authentic and generous. The recognisable thing is the orange-red (vermilion lacquer) against paper white, lifted by touches of yellow gold, the way red and gold meet on lanterns and red envelopes. Green (jade) brings calm to quieter areas so the red stays special.
 
 ## Colors
 
-- primary: the main action color. Use it for one action per view.
-- destructive: irreversible actions and errors only.
-- muted / muted-foreground: secondary surfaces and supporting text.
-- success, warning, info: status only (badges, alerts, inline messages), never for actions.
+- primary (orange-red, vermilion lacquer): the one main action per view, such as "Book a table" or "Order now". Also for small festive details like a price tag or a seal-style mark.
+- accent (yellow gold): highlights and hover states, chef's specials, festive badges. Use it on small areas, never as a page background.
+- secondary (green, jade): calm supporting surfaces such as dietary info, opening hours and secondary buttons.
+- background (paper white) and foreground (warm ink): the base of every page. Dark mode uses deep ink surfaces with brighter orange-red and gold.
+- muted / muted-foreground: menu descriptions, footnotes and supporting text.
+- destructive (deep red): errors and irreversible actions only, such as cancelling a booking. It is darker than primary; always pair it with clear text or an icon so it is never mistaken for the main action.
+- success, warning, info: status only (booking confirmed, limited availability, opening-hours notice), never for actions.
 
 ## Typography
 
-Geist for everything. Display style for page titles, body style for content.
+- ZCOOL KuaiLe for display: page titles, section titles and dish category headings. Playful and hand-made, and it supports Chinese characters.
+- Noto Sans SC for everything else: menus, prices, forms and body text. Clear at small sizes, with matching Chinese glyphs so bilingual dish names sit together.
+- Show dish names in Chinese and English when known; Chinese first or above, English below in the body style.
 
 ## Layout
 
+- Marketing site: generous hero with real food photography, then menu, story, location and booking.
 - Use the spacing scale only (multiples of 4px through Tailwind utilities).
-- One primary action per view; secondary actions use outline or ghost buttons.
+- One primary action per view ("Book a table" or "Order now"); secondary actions use outline or ghost buttons.
+- Keep the booking or order action reachable on every page; on phones, a sticky bottom bar with 44px touch targets.
+- Menus are scannable: dish name, short description and price on one row on desktop, stacked on phones.
 - Body text stays under 75 characters per line.
+
+## Shapes
+
+- Friendly rounded corners (base radius 0.875rem) on cards and buttons, like lacquer trays and dumpling edges.
+- Use smaller radius on inputs and tags, larger on hero images, so not every surface looks the same.
+- Shadows are soft and used for lifted things only (menus, dialogs), not on every card.
 
 ## Components
 
@@ -79,3 +93,9 @@ Geist for everything. Display style for page titles, body style for content.
 - Don't put an all-caps label above every heading.
 - Don't number sections (01, 02, 03) unless the content is a real sequence.
 - Don't accent a single word in a headline with a different color or weight.
+- Do use real Chinese characters for dish names and section labels, checked by a fluent reader.
+- Do keep orange-red to one main button per view.
+- Don't use "chopstick" or "wonton" novelty fonts that imitate brush strokes with Latin letters.
+- Don't fill large areas with orange-red and yellow gold together; one leads, the other accents.
+- Don't use dragons, pandas or lanterns as generic decoration; use imagery of the real food and room.
+- Don't use destructive red for prices, specials or promotions.
