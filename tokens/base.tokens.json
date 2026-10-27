@@ -3,7 +3,7 @@
     "$type": "dimension",
     "base": {
       "$value": {
-        "value": 0.625,
+        "value": 0.875,
         "unit": "rem"
       },
       "$description": "Base corner radius; sm–4xl derive from it."
@@ -13,7 +13,7 @@
     "$type": "fontFamily",
     "sans": {
       "$value": [
-        "Geist",
+        "Noto Sans SC",
         "sans-serif"
       ]
     }
@@ -36,6 +36,27 @@
           "value": -0.02,
           "unit": "em"
         }
+      },
+      "font-family": {
+        "$value": [
+          "ZCOOL KuaiLe",
+          "sans-serif"
+        ]
+      },
+      "font-weight": {
+        "$value": 400
+      },
+      "font-size": {
+        "$value": {
+          "value": 2.25,
+          "unit": "rem"
+        }
+      },
+      "letter-spacing": {
+        "$value": {
+          "value": 0,
+          "unit": "em"
+        }
       }
     },
     "body": {
@@ -50,6 +71,21 @@
         },
         "fontWeight": 400,
         "lineHeight": 1.5
+      },
+      "font-family": {
+        "$value": [
+          "Noto Sans SC",
+          "sans-serif"
+        ]
+      },
+      "font-size": {
+        "$value": {
+          "value": 1,
+          "unit": "rem"
+        }
+      },
+      "line-height": {
+        "$value": 1.6
       }
     }
   },
