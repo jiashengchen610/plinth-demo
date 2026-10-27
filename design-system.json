@@ -1,0 +1,28 @@
+{
+  "name": "Chinese Restaurant",
+  "context": "marketing-site",
+  "naming": "shadcn",
+  "componentBase": "radix",
+  "defaultBrand": "restaurant",
+  "brands": [
+    {
+      "id": "restaurant",
+      "name": "restaurant"
+    }
+  ],
+  "tokens": {
+    "rename": {
+      "radius/base": "radius"
+    }
+  },
+  "hardcoded": {
+    "allowFiles": [
+      "src/components/button/button.tsx",
+      "src/components/badge/badge.tsx",
+      "src/components/card/card.tsx",
+      "src/components/input/input.tsx",
+      "src/components/label/label.tsx"
+    ],
+    "allowFilesNote": "Vendored shadcn/ui sources are accepted as-is; generated components are checked."
+  }
+}
